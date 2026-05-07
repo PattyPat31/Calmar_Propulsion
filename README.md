@@ -3,11 +3,10 @@
 propulsion méduses, poulpes, etc...
 -------------------------------------------
 
-### <span style="color:gray">Méthode d’Euler explicite
+## Méthode d’Euler explicite
 
-#### <span style="color:gray">Objectif
+### Objectif
 
-<span style="color:gray">
 Nous voulons résoudre numériquement l’équation du mouvement :
 
 $$
@@ -31,9 +30,8 @@ L’idée est de calculer progressivement :
 
 ---
 
-### <span style="color:gray">Principe de la méthode d’Euler
+### Principe de la méthode d’Euler
 
-<span style="color:gray">
 On découpe le temps en petits intervalles :
 
 $$
@@ -47,9 +45,8 @@ $$
 
 ---
 
-### <span style="color:gray">Mise à jour de la vitesse
+### Mise à jour de la vitesse
 
-<span style="color:gray">
 On utilise l’approximation :
 
 $$
@@ -64,9 +61,8 @@ $$
 
 ---
 
-### <span style="color:gray">Mise à jour de la position
+## Mise à jour de la position
 
-<span style="color:gray">
 De la même manière :
 
 $$
@@ -81,9 +77,9 @@ $$
 
 ---
 
-### <span style="color:gray">Interprétation physique
+### Interprétation physique
 
-<span style="color:gray">
+
 Pendant un petit temps $dt$ :
 - on suppose l’accélération constante,
 - puis on avance le système d’un petit pas.
@@ -94,9 +90,8 @@ Plus $dt$ est petit :
 
 ---
 
-### <span style="color:gray">Remarque
+### Remarque
 
-<span style="color:gray">
 La méthode d’Euler est :
 - simple,
 - rapide,
@@ -105,6 +100,8 @@ La méthode d’Euler est :
 Mais elle peut devenir imprécise si :
 - le pas de temps est trop grand,
 - ou si les accélérations varient très rapidement.
+
+
   
 - le pas de temps est trop grand,
 - ou si les accélérations varient très rapidement.
