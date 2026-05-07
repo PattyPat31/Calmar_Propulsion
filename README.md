@@ -101,8 +101,3 @@ Mais elle peut devenir imprécise si :
 - le pas de temps est trop grand,
 - ou si les accélérations varient très rapidement.
 
-
-  
-- le pas de temps est trop grand,
-- ou si les accélérations varient très rapidement.
-</span>
