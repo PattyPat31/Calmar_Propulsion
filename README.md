@@ -1,2 +1,3 @@
-Ossature de script Python pour projet L1
+# Ossature de script Python pour projet L1
+-------------------------------------------
 propulsion méduses, poulpes, etc...
