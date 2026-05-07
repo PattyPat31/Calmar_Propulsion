@@ -1,0 +1,96 @@
+# Méthode d’Euler explicite
+
+## Objectif
+
+Nous voulons résoudre numériquement l’équation du mouvement :
+
+$$
+m \frac{dv}{dt} = \sum F
+$$
+
+ou encore :
+
+$$
+\frac{dv}{dt} = a
+$$
+
+où :
+- $v$ est la vitesse,
+- $a$ est l’accélération.
+
+L’idée est de calculer progressivement :
+- la vitesse,
+- puis la position,
+à chaque instant.
+
+---
+
+## Principe de la méthode d’Euler
+
+On découpe le temps en petits intervalles :
+
+$$
+dt
+$$
+
+À chaque étape :
+1. on calcule l’accélération,
+2. on met à jour la vitesse,
+3. puis la position.
+
+---
+
+## Mise à jour de la vitesse
+
+On utilise l’approximation :
+
+$$
+\frac{dv}{dt} \approx \frac{v_{n+1} - v_n}{dt}
+$$
+
+ce qui donne :
+
+$$
+v_{n+1} = v_n + a_n \, dt
+$$
+
+---
+
+## Mise à jour de la position
+
+De la même manière :
+
+$$
+\frac{dz}{dt} \approx \frac{z_{n+1} - z_n}{dt}
+$$
+
+d’où :
+
+$$
+z_{n+1} = z_n + v_n \, dt
+$$
+
+---
+
+## Interprétation physique
+
+Pendant un petit temps $dt$ :
+- on suppose l’accélération constante,
+- puis on avance le système d’un petit pas.
+
+Plus $dt$ est petit :
+- plus la simulation est précise,
+- mais plus le calcul est long.
+
+---
+
+## Remarque
+
+La méthode d’Euler est :
+- simple,
+- rapide,
+- très utilisée pour découvrir les simulations numériques.
+
+Mais elle peut devenir imprécise si :
+- le pas de temps est trop grand,
+- ou si les accélérations varient très rapidement.
